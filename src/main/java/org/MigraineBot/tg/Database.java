@@ -23,11 +23,12 @@ public class Database {
     }
 
 
-    public static Set<Long> getAllChatId() {
+    public synchronized static Set<Long> getAllChatId() {
         return allChatId;
     }
 
-    public Map<Integer, String> getIdName() {
+    public synchronized Map<Integer, String> getIdName() {
         return idName;
     }
+
 }
